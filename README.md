@@ -1,2 +1,2 @@
 # Handyman
-A Website using MERN which can help people to find their Hnadyman
+A Website using MERN which can help people to find their Handyman
