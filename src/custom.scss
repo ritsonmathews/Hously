@@ -1,0 +1,33 @@
+// Override default variables before the import
+/******* Customized Bootstrap ********/
+
+$primary: #00027b;
+$secondary: #9ad0ff;
+$light: #eff9fd;
+$dark: #000000;
+
+$font-family-base: 'Heebo', sans-serif;
+
+$headings-font-family: 'Inter', sans-serif;
+
+$body-bg: $light;
+
+$body-color: #666565;
+
+$headings-color: $dark;
+
+$headings-font-weight: 700;
+
+$display-font-weight: 800;
+
+$enable-responsive-font-sizes: true;
+
+$border-radius: 2px;
+
+$link-decoration: none;
+
+$enable-negative-margins: true;
+
+@import "bootstrap/scss/bootstrap";
+// Import Bootstrap and its default variables
+@import '~bootstrap/scss/bootstrap.scss';
