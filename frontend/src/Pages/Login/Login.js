@@ -26,6 +26,10 @@ const Login = () => {
     userName: "",
     password: "",
   });
+  const [formErrors, setFormErrors] = useState({
+    userName: "",
+    password: "",
+  });
 
   const [login, { loading, error }] = useMutation(LOGIN_MUTATION);
 
@@ -34,24 +38,36 @@ const Login = () => {
   };
 
   const handleSubmit = async () => {
+    // Reset form errors
+    setFormErrors({ userName: "", password: "" });
+
+    if (!formData.userName) {
+      setFormErrors({ ...formErrors, userName: "Username is required" });
+      return;
+    }
+
+    if (!formData.password) {
+      setFormErrors({ ...formErrors, password: "Password is required" });
+      return;
+    }
+
     try {
       const { data } = await login({
         variables: { input: formData },
       });
 
-      // Handle successful login here, e.g., store the token and redirect
       console.log("Login successful:", data);
 
       // Redirect to another page after login (e.g., dashboard)
       navigate("/dashboard");
     } catch (error) {
-      // Handle login error
+      alert("Wrong login credentials");
       console.error("Login error:", error);
     }
   };
 
   return (
-    <Container maxWidth="sm" style={{minHeight:"50vh",marginTop:"50px"}}>
+    <Container maxWidth="sm" style={{ minHeight: "50vh", marginTop: "50px" }}>
       <Typography variant="h4" align="center" gutterBottom>
         Login
       </Typography>
@@ -64,6 +80,8 @@ const Login = () => {
           fullWidth
           required
           margin="normal"
+          error={formErrors.userName !== ""}
+          helperText={formErrors.userName}
         />
         <TextField
           label="Password"
@@ -74,6 +92,8 @@ const Login = () => {
           fullWidth
           margin="normal"
           required
+          error={formErrors.password !== ""}
+          helperText={formErrors.password}
         />
         <Button
           variant="contained"
@@ -91,6 +111,7 @@ const Login = () => {
 };
 
 export default Login;
+
 
 // import React, { useState } from 'react'
 // import { TextField, Button } from '@mui/material';
