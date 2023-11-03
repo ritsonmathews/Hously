@@ -13,6 +13,9 @@ import MyJobs from "./Pages/UserProfile/MyJobs";
 import AboutPage from "./Pages/About/AboutPage";
 import ContactPage from "./Pages/Contact/ContactPage";
 import JobPosting from "./Pages/JobPosting/JobPosting";
+import Register from "./Pages/Register/Register";
+import Login from "./Pages/Login/Login";
+import UserManagement from "./Pages/UserManagement/UserManagement";
 
 const App = () => {
   return (
@@ -31,6 +34,9 @@ const App = () => {
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/jobs" element={<Jobs />} />
         <Route path="/jobposting" element={<JobPosting />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/users" element={<UserManagement />} />
       </Routes>
       <Footer />
     </Router>

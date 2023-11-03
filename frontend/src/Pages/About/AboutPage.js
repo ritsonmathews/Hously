@@ -19,7 +19,6 @@ const AboutPage = () => {
         </div>
         {/* // <!-- Header End --> */}
 
-
         {/* // <!-- About Start --> */}
         <div className="container-xxl py-5">
             <div className="container">
@@ -28,15 +27,6 @@ const AboutPage = () => {
                         <div className="row g-0 about-bg rounded overflow-hidden">
                             <div className="col-12 text-start">
                                 <img className="img-fluid w-100" src="/img/about-1.jpeg" />
-                            </div>
-                            <div className="col-6 text-start">
-                                {/* <img className="img-fluid" src="/img/about-2.jpeg" style={{width: 255, marginTop: 5}} /> */}
-                            </div>
-                            <div className="col-6 text-end">
-                                {/* <img className="img-fluid" src="img/about-3.jpg" style="width: 85%;"> */}
-                            </div>
-                            <div className="col-6 text-end">
-                                {/* <img className="img-fluid w-100" src="img/about-4.jpg"> */}
                             </div>
                         </div>
                     </div>

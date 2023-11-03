@@ -111,7 +111,7 @@ function Dashboard() {
     </BarChart>
   </div>
 )}
-        {activeTab === 'services' && (
+        {activeTab === 'Services' && (
           <div>
             <Services />
           </div>

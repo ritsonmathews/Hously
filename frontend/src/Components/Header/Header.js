@@ -49,6 +49,9 @@ const Header = () => {
                 <Link to={"/myjobs"} class="dropdown-item">
                   My Jobs
                 </Link>
+                <Link to={"/login"} class="dropdown-item">
+                  Login
+                </Link>
               </div>
             </div>
             <div class="nav-item dropdown">
