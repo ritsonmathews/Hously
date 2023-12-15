@@ -1,0 +1,9 @@
+.nav-link{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+@media(max-width:690px){
+    .nav-link{
+        font-size: 15px;
+    }
+}

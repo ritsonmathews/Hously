@@ -1,0 +1,121 @@
+.job-provider-main-body {
+  background-color: #f1f2f7;
+  padding: 15px 0 20px;
+  
+}
+.job-provider-root {
+  background-color: #fffefe;
+  border-radius: 10px;
+  padding: 20px 40px 40px;
+  min-height: 100vh;
+}
+.job-provider-section1 {
+  display: flex;
+  width: 100%;
+}
+.job-provider-section1-head {
+  width: 50%;
+  text-align: center;
+}
+.job-provider-main-title {
+  color: #003300;
+  font-size: 28px;
+  font-family: "Montserrat", sans-serif;
+}
+.job-provider-search-bar {
+  margin-top: 17px;
+  width: 40%;
+}
+.job-provider-section2 {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  text-align: center;
+  width: 100%;
+}
+.section2-provider-info {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid transparent;
+  box-shadow: 0 3px 15px rgb(0 0 0 / 20%);
+  width: 100%;
+  min-height: fit-content;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+.section2-active-provider-info-count {
+  font-size: 28px;
+  color: #009900;
+}
+.section2-active-provider-info-title {
+  font-size: 18px;
+  color: #009900;
+}
+.section2-blocked-provider-info-count {
+  font-size: 28px;
+  color: #e60000;
+}
+.section2-blocked-provider-info-title {
+  font-size: 18px;
+  color: #e60000;
+}
+.job-provider-section3 {
+  width: 100%;
+}
+.job-provider-section3-routes {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.job-provider-section3-routes-link {
+  padding: 20px;
+  cursor: pointer;
+  color: #003300;
+  font-size: 18px;
+}
+.job-provider-section3-body {
+  margin-top: 20px;
+}
+.providers-main {
+  margin-top: 50px;
+}
+.providers-table-head {
+  text-align: left;
+}
+.job-provider-search-dropdown {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 0 3px 15px rgb(0 0 0 / 20%);
+  position: absolute;
+  width: 25%;
+}
+.job-provider-search-list {
+  /* padding: 15px; */
+  color: #616c6f;
+}
+.job-provider-search-list-content {
+  padding: 10px 15px;
+  border-bottom: 2px solid #d6d7dd;
+  box-shadow: 0 2px 3px #f1f2f7;
+}
+.job-provider-search-list-empty {
+  padding: 15px;
+  color: #616c6f;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+}
+
+@media screen and (max-width:990px) {
+  .job-provider-section1{
+    flex-direction: column;
+  }
+  .job-provider-section1-head{
+    width: 100%;
+  }
+  .job-provider-search-bar{
+    width: 100%;
+  }
+  .job-provider-search-dropdown{
+    width: 50%;
+  }
+}

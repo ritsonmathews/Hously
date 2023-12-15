@@ -1,0 +1,25 @@
+.submit-application-main {
+    background-color: #f1f2f7;
+    padding: 15px 0 20px;
+  }
+  .submit-application-parent {
+    background-color: #fffefe;
+    padding: 18px;
+    border-radius: 8px;
+  }
+  .submit-application-program-heading {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+  }
+  .submit-application-program-head,
+  .submit-application-form-head {
+    font-size: 28px;
+    color: #003300;
+  }
+  .submit-application-form-heading {
+    font-family: "Montserrat", sans-serif;
+  }
+  .submit-application-form-user-details {
+    margin-bottom: 10px;
+  }
+  

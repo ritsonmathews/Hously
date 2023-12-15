@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Amaranth&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amaranth&family=Open+Sans:wght@300;400;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+/* font-family: 'Open Sans', sans-serif; */
+.seeker-profile-main-parent {
+  background-color: #f1f2f7;
+  padding: 30px 0;
+  min-height: 91.9vh;
+  display: flex;
+  justify-content: center;
+}
+.seeker-profile-main {
+  background-color: #fffefe;
+  padding: 10px;
+  border-radius: 7px;
+}
+
+.seeker-profile-main-top {
+  display: flex;
+}
+
+/* Top Left section starts */
+.seeker-profile-main-left {
+  width: 40%;
+  padding: 10px;
+}
+.seeker-profile-left-heading {
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+}
+/* Top Left section Ends */
+
+/* Top Left section starts */
+/* .provider-profile-main-left {
+  width: 40%;
+  padding: 10px;
+}
+.provider-profile-left-heading {
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+/* Top Left section Ends */
+
+/* Top Right section starts */
+
+.seeker-profile-main-right {
+  width: 50%;
+  padding: 10px;
+}
+.seeker-profile-right-cards {
+  text-align: center;
+}
+.seeker-profile-right-cards-heading {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  /* margin-bottom: 20px;  */
+}
+.seeker-link {
+  text-decoration: none;
+}
+.seeker-profile-box {
+  padding: 10px;
+  letter-spacing: 0.5px;
+  border: 1px solid transparent;
+  box-shadow: 0 3px 5px rgb(0 0 0 / 20%);
+  cursor: pointer;
+  border-radius: 20px;
+  transition: 0.1s ease-in-out;
+}
+.seeker-profile-box:hover {
+  box-shadow: 0 3px 15px rgb(0 0 0 / 20%);
+  transform: scale(0.99);
+}
+.seeker-profile-box:hover .seeker-profile-box-content {
+  color: #3d4344;
+}
+.seeker-profile-box-value {
+  color: #009900;
+}
+
+.seeker-profile-box-content {
+  font-size: 18px;
+  color: #616c6f;
+}
+
+@media screen and (max-width: 975px) {
+  .seeker-profile-main-top {
+    flex-direction: column;
+  }
+  .seeker-profile-main-left,
+  .seeker-profile-main-right {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .seeker-profile-main-top {
+    flex-direction: row;
+  }
+  .seeker-profile-main-left,
+  .seeker-profile-main-right {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 747px) {
+  .seeker-profile-main-parent {
+    padding: 20px 0;
+  }
+  .seeker-profile-main-top {
+    flex-direction: column;
+  }
+  .seeker-profile-main-left,
+  .seeker-profile-main-right {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 547px) {
+  .seeker-profile-left-heading,
+  .seeker-profile-right-cards-heading {
+    font-size: 17px;
+  }
+}

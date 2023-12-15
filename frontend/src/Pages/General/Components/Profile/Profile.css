@@ -1,0 +1,29 @@
+.profile-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.add-admin-container{
+    float: left;
+}
+.change-password-container{
+    margin-left: 1rem;
+    float: left;
+}
+.edit-profile-container,.manage-admins-container{
+    margin-left: 1rem;
+    float: left;
+}
+.add-admin,.change-password,.edit-profile,.manage-admins{
+    text-decoration: none;
+}
+@media(max-width:460px){
+    .profile-container{
+        font-size: 14px;
+    }
+}
+@media(max-width:320px){
+    .profile-container{
+        font-size: 10px;
+    }
+}

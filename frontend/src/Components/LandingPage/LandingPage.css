@@ -1,0 +1,32 @@
+.landingpage{
+  padding: 5%;
+}
+
+.landing-container{
+  text-align: center;
+}
+.landing-heading{
+  font-size: 45px;
+  font-weight: bold;
+  padding: 10%;
+  
+}
+.landing-button{
+  border-radius: 100px !important;
+  border: none;
+  color: #ffffff !important;
+  font-size: 19px;
+  background: #00027b !important;
+  padding: 2% 6% !important;
+  text-decoration: none;
+}
+  
+.landing-button:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}

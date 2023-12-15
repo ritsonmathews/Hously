@@ -1,0 +1,11 @@
+.list-admins-main-parent {
+  background-color: #f1f2f7;
+  padding: 15px 15px 20px;
+  min-height: 91vh;
+}
+.list-admins-main {
+  background-color: #fffefe;
+  min-height: 80vh;
+  padding: 15px 20px;
+  border-radius: 7px;
+}

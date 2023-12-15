@@ -1,0 +1,45 @@
+.data-manage-main {
+  background-color: #f1f2f7;
+  padding: 15px 0 20px;
+}
+.data-manage-parent {
+  background-color: #fffefe;
+  padding: 18px;
+  border-radius: 8px;
+}
+.data-manage-heading {
+  text-align: center;
+  font-size: 30px;
+  margin: 0 0 40px;
+  color: #003300;
+}
+.data-manage-list {
+  display: flex;
+  justify-content: center;
+}
+.data-manage-user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.data-manage-user-number {
+  font-size: 15px;
+  color: #616c6f;
+  text-transform: uppercase;
+}
+.data-manage-user-details {
+  /* float: right; */
+  display: flex;
+  margin-right: 20px;
+}
+.data-manage-user-details-avatar {
+  margin-right: 10px;
+}
+.data-manage-user-details-name {
+  color: #494d4e;
+  font-weight: 600;
+}
+.data-manage-user-details-username {
+  color: #616c6f;
+  font-size: 14px;
+}

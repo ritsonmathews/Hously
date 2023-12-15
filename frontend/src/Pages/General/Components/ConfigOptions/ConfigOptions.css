@@ -1,0 +1,17 @@
+.ep-main-container {
+    background-color: #f1f2f7;
+    min-height: 91vh;
+    padding: 2rem;
+  }
+  .ep-form-container {
+    margin: 1rem 10rem;
+  }
+  .ep-title {
+    color: #003300;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 20px;
+    font-family: "Montserrat", sans-serif;
+  }
+  

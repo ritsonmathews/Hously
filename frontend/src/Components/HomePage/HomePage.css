@@ -1,0 +1,110 @@
+/* Photo and Upload resume text */
+.elementor-background {
+  background-image: url(https://images.pexels.com/photos/3855475/pexels-photo-3855475.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+}
+.elementor-background-overlay {
+  padding: 15% 5%;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* padding: 10% 5%; */
+  /* vertical-align: middle; */
+}
+
+.elementor-heading-title {
+  color: #ffffff;
+  line-height: 1.4em;
+  margin: 3%;
+}
+
+.input-field {
+  background-color: #ffffff;
+  padding: 2%;
+}
+.search-btn {
+  background-color: #303af7 !important;
+  border: 0;
+  border-radius: 3px;
+  color: #fff !important;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  min-width: 160px;
+  outline: none;
+  padding: 15px 25px;
+  position: relative;
+  text-transform: uppercase;
+}
+.form-control,
+.form-select {
+  background-color: none !important;
+}
+
+/* category */
+/*** Category ***/
+.cat-item {
+  display: block;
+  box-shadow: 0 0 45px rgba(0, 0, 0, 0.08);
+  border: 1px solid transparent;
+  transition: 0.5s;
+}
+
+.cat-item:hover {
+  border-color: rgba(0, 0, 0, 0.08);
+  box-shadow: none;
+}
+
+/*** Testimonial ***/
+.testimonial-carousel .owl-item .testimonial-item,
+.testimonial-carousel .owl-item.center .testimonial-item * {
+  transition: 0.5s;
+}
+
+.testimonial-carousel .owl-item.center .testimonial-item {
+  background: var(--primary) !important;
+}
+
+.testimonial-carousel .owl-item.center .testimonial-item * {
+  color: #ffffff !important;
+}
+
+.testimonial-carousel .owl-dots {
+  margin-top: 24px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.testimonial-carousel .owl-dot {
+  position: relative;
+  display: inline-block;
+  margin: 0 5px;
+  width: 15px;
+  height: 15px;
+  border: 5px solid var(--primary);
+  border-radius: 2px;
+  transition: 0.5s;
+}
+
+.testimonial-carousel .owl-dot.active {
+  background: var(--dark);
+  border-color: var(--primary);
+}
+
+/* Add these styles for hover descriptions */
+.cat-item:hover .category-description {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.category-description {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}

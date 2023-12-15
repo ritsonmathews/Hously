@@ -1,0 +1,11 @@
+.manage-admin-main-parent {
+    background-color: #f1f2f7;
+    padding: 15px 15px 20px;
+    min-height: 91vh;
+  }
+  .manage-admin-main {
+    background-color: #fffefe;
+    padding: 15px 20px;
+    border-radius: 7px;
+  }
+  

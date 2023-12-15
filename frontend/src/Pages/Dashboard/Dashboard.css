@@ -1,0 +1,101 @@
+.main-container{
+    width: 100%;
+    display: block;
+    margin-top: 1.5rem;
+    justify-content: center;
+    padding-bottom: 3rem;
+}
+.grid-div-container{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+.paper{
+    /* border: 1px solid rgb(201, 201, 201);
+    border-radius: 3px; */
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.5px;
+    border: 1px solid transparent;
+    box-shadow: 0 3px 15px rgb(0 0 0 / 20%);
+    cursor: default;
+    /* background-color: white; */
+}
+/* .paper:hover{
+    border: 1px solid transparent;
+    box-shadow: 0 3px 15px rgb(0 0 0 / 20%);
+    cursor: pointer;
+} */
+.paper-head{
+    /* color: #5dbb1f; */
+    font-weight: lighter;
+    color: white;
+}
+.paper-para{
+    font-size: 18px;
+    /* color: gray; */
+    color: white;
+
+}
+.graph-container{
+    width:65%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    padding: 3rem;
+    border: 1px solid transparent;
+    box-shadow: 0px 3px 15px rgb(0 0 0 / 20%);
+    margin-top: 1.5rem;
+}
+.piechart-container{
+    width:35%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    padding: 1.7rem 1rem;
+    border: 1px solid transparent;
+    box-shadow: 0px 3px 15px rgb(0 0 0 / 20%);
+    margin: 1.5rem 0 0 1.5rem;
+}
+.graph-title{
+    font-weight: normal;
+    font-size: 30px;
+    letter-spacing: 0.5px;
+    color: #297e07;
+}
+@media(max-width:1200px){
+    .main-container{
+        display: block;
+    }
+    .grid-div-container{
+        width: 100%;
+    }
+    .graph-container{
+        width:100%;
+    }
+}
+@media(max-width:690px){
+    .main-container{
+        margin-top: 10px;
+    }
+    .paper-head{
+        font-size: 20px;
+        letter-spacing: 0.2px;
+    }
+    .paper-para{
+        font-size: 15px;
+        letter-spacing: 0.2px;
+    }
+    .graph-title{
+        font-size: 20px;
+        letter-spacing: 0.2px;
+    }
+    .paper{
+        padding: 2px;
+    }
+}
+@media(max-width:339px){
+    .paper{
+        border: 0;
+    }
+}

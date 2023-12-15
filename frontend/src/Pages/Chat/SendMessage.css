@@ -1,0 +1,25 @@
+.sendMsg {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  bottom: 0;
+  z-index: 1;
+  border-top: 1px solid lightgray;
+  margin-left: -5px;
+  padding: 10px;
+  padding-bottom: 30px;
+  background-color: #fafafa;
+}
+.send-input-box{
+/* border-radius: 20px; */
+/* border: none; */
+/* padding: 14px; */
+color: white;
+background: white;
+width: 50%;
+font-size: 14px;
+}
+
+.sendMsg i{
+padding-top: 12px;
+}

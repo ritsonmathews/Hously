@@ -1,0 +1,12 @@
+.support-main-container{
+    display: flex;
+    }
+    .support-rightside{
+        padding-top: 40px;
+        padding-left: 15px;
+        width:70%;
+    }
+    .support-leftside{
+    padding-top: 10px;
+        width:30%;
+    }

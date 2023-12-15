@@ -1,0 +1,68 @@
+.view-apps-container {
+  width: 100%;
+}
+/* .view-apps-head{
+    font-weight: lighter;
+    color: gray;
+    width: 30%;
+    float: left;
+}
+.view-apps-search-container{
+    width: 70%;
+    float: left;
+} */
+.view-apps-section1 {
+  display: flex;
+  width: 100%;
+}
+.view-apps-section1-head {
+  width: 50%;
+  text-align: center;
+}
+.view-apps-main-title {
+  color: #003300;
+  font-size: 28px;
+  font-family: "Montserrat", sans-serif;
+}
+.view-apps-search-bar {
+  margin-top: 17px;
+  width: 40%;
+}
+.view-apps-search-dropdown {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 0 3px 15px rgb(0 0 0 / 20%);
+  position: absolute;
+  width: 25%;
+  background-color: #fff;
+}
+.view-apps-search-list {
+  /* padding: 15px; */
+  color: #616c6f;
+}
+.view-apps-search-list-content {
+  padding: 10px 15px;
+  border-bottom: 2px solid #d6d7dd;
+  box-shadow: 0 2px 3px #f1f2f7;
+}
+.view-apps-search-list-empty {
+  padding: 15px;
+  color: #616c6f;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+}
+@media screen and (max-width: 990px) {
+  .view-apps-section1 {
+    flex-direction: column;
+  }
+  .view-apps-section1-head {
+    width: 100%;
+  }
+  .view-apps-search-bar {
+    width: 100%;
+  }
+  .view-apps-search-dropdown {
+    width: 50%;
+  }
+}

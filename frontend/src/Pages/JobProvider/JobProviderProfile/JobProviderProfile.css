@@ -1,0 +1,142 @@
+.provider-profile-main-parent {
+  background-color: #f1f2f7;
+  padding: 15px 0 20px;
+}
+.provider-profile-main {
+  background-color: #fffefe;
+  padding: 10px;
+  border-radius: 7px;
+}
+
+.provider-profile-main-top {
+  display: flex;
+}
+
+/* Top Left section starts */
+.provider-profile-main-left {
+  width: 40%;
+  padding: 10px;
+}
+.provider-profile-left-heading {
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+}
+/* Top Left section Ends */
+
+/* Top Right section starts */
+
+.provider-profile-main-right {
+  width: 50%;
+  padding: 10px;
+}
+.provider-profile-right-cards {
+  text-align: center;
+}
+.provider-profile-right-cards-heading {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: left;
+  margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+.provider-link {
+  text-decoration: none;
+}
+.provider-profile-box {
+  padding: 10px;
+  letter-spacing: 0.5px;
+  border: 1px solid transparent;
+  box-shadow: 0 3px 5px rgb(0 0 0 / 20%);
+  cursor: pointer;
+  border-radius: 20px;
+  transition: 0.1s ease-in-out;
+}
+.provider-profile-box:hover {
+  box-shadow: 0 3px 15px rgb(0 0 0 / 20%);
+  transform: scale(0.99);
+}
+.provider-profile-box:hover .provider-profile-box-content {
+  color: #3d4344;
+}
+.provider-profile-box-value {
+  color: #009900;
+}
+
+.provider-profile-box-content {
+  font-size: 18px;
+  color: #616c6f;
+}
+
+/* Top Right section Ends */
+
+/* Bottom section Starts */
+.provider-profile-main-bottom {
+  margin-top: 50px;
+  text-align: center;
+}
+.provider-profile-bottom-header {
+  padding: 0 0 10px 0;
+}
+.provider-profile-bottom-header-button {
+  color: grey;
+  padding: 10px 100px;
+  cursor: pointer;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+/* Bottom Ad Posting Section starts */
+.provider-postad-main-parent {
+  padding: 20px;
+}
+.provider-navbar-badge {
+  background-color: #003300;
+  color: #fffefe;
+  border-radius: 10rem;
+  margin-left: 5px;
+  display: inline-block;
+  padding: 0.25em 0.4em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+}
+/* Bottom Ad Posting Section Ends */
+/* Bottom section Ends */
+
+/* Card starts */
+.provider-profile-card {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 850px) {
+  .provider-profile-main-left {
+    width: 50%;
+  }
+  .provider-profile-main-right {
+    width: 50%;
+  }
+  .provider-profile-card {
+    flex-direction: column;
+  }
+  .provider-profile-card-content {
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 740px) {
+  .provider-profile-main-top {
+    flex-direction: column;
+  }
+  .provider-profile-main-left {
+    width: 100%;
+  }
+  .provider-profile-main-right {
+    width: 100%;
+  }
+}

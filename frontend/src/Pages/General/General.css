@@ -1,0 +1,151 @@
+.gen-container{
+    width: 100%;
+    margin-bottom: 3rem;
+    display:block ;
+    font-family:  -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+}
+.gen-pic-container{
+    width: 100%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.profile-pic{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 2rem 1rem;
+    border: 4px solid white;
+}
+.sub-container-1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.profile-name{
+    font-weight: normal;
+    color: #00027B;
+    cursor: default;
+    margin-top: 4rem;
+    font-family: "Montserrat", sans-serif;
+}
+.menu-link{
+    text-decoration: none;
+    color: black;
+}
+.sub-container-2{
+    margin-top: 0;
+    width: 100%;
+}
+.gen-grid-container{
+    width: 100%;
+    padding: 0 10px;
+    margin: 0;
+}
+.details-container{
+    float: left;
+}
+.configuration-container{
+    float: left;
+}
+.grid-head{
+    margin-top: 0;
+    text-align: center;
+    font-size: 30px;
+    font-weight: lighter;
+}
+.delete-div-container{
+    padding: 7px 10px;
+}
+@media(max-width:690px){
+    .profile-name{
+        font-size: 28px;
+    }
+    .gen-pic-container{
+        height: 220px;
+    }
+    .grid-head{
+        font-size: 27px;
+    }
+}
+@media(max-width:559px){
+    .profile-name{
+        font-size: 25px;
+    }
+    .gen-cover-pic{
+        height: 120px;
+    }
+    .profile-pic{
+        width: 80px;
+        height: 80px;
+        top: 80px;
+    }
+    .gen-pic-container{
+        height: 170px;
+    }
+    .sub-container-2{
+        margin-top: 2rem;
+    }
+    .grid-head{
+        font-size: 25px;
+    }
+}
+@media(max-width:530px){
+}
+@media(max-width:460px){
+    .gen-cover-pic{
+        height: 100px;
+    }
+    .profile-pic{
+        width: 60px;
+        height: 60px;
+        top: 70px;
+    }
+    .gen-pic-container{
+        height: 140px;
+    }
+    .menu{
+        font-size: 15px;
+    }
+    .delete-btn{
+        font-size: 10px;
+    }
+}
+@media(max-width:425px){
+}
+@media(max-width:385px){
+    .profile-name{
+        font-size: 22px;
+    }
+    .gen-cover-pic{
+        height: 80px;
+    }
+    .profile-pic{
+        width: 50px;
+        height: 50px;
+        top: 60px;
+    }
+    .gen-pic-container{
+        height: 120px;
+    }
+    .sub-container-2{
+        margin-top: 1rem;
+    }
+    .grid-head{
+        font-size: 24px;
+        padding-top: 0;
+    }
+}
+@media(max-width:320px){
+    .grid-head{
+        font-size: 18px;
+    }
+    .menu{
+        font-size: 12px;
+    }
+    .delete-btn{
+        font-size: 7px;
+    }
+}

@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Amaranth&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amaranth&family=Open+Sans:wght@300;400;500&display=swap');
+.programs-main {
+    background-color: #f1f2f7;
+    padding: 15px 0 20px;
+}
+.programs-root {
+  background-color: #fffefe;
+  border-radius: 10px;
+  padding: 20px 40px 40px;
+}
+.programs-section1 {
+  display: flex;
+  width: 100%;
+}
+.programs-section1-head {
+  width: 50%;
+  text-align: center;
+  font-family: 'Amaranth', sans-serif;
+}
+.programs-main-title {
+  color: #003300;
+  font-size: 28px;
+  font-family: "Montserrat", sans-serif;
+
+}
+.programs-search-bar {
+  margin-top: 17px;
+  width: 40%;
+}
+.programs-section3 {
+  width: 100%;
+}
+.programs-section3-routes {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.programs-section3-routes-link {
+  padding: 20px;
+  cursor: pointer;
+  color: #003300;
+  font-size: 18px;
+}
+.program-list-card {
+  display: flex;
+  justify-content: space-between;
+}
+.programs-search-dropdown {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 0 3px 15px rgb(0 0 0 / 20%);
+  margin-top: 1px;
+  margin-bottom: 25px;
+  position: absolute;
+  width: 25%;
+  z-index: 10;
+  background-color: #fffefe;
+}
+.programs-search-list {
+    /* padding: 15px; */
+    color:#616C6F
+}
+.programs-search-list-content{
+    padding: 10px 15px;
+    border-bottom: 2px solid #d6d7dd;
+    box-shadow: 0 2px 3px #f1f2f7;
+}
+.programs-search-list-empty{
+    padding: 15px;
+    color:#616C6F;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center ;
+}
+@media screen and (max-width: 1200px) {
+  .program-list-card-content {
+    margin-top: 10px;
+    margin-right: 25px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .program-list-card {
+    flex-direction: column;
+  }
+  .program-list-card-content {
+    margin-top: 10px;
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width:990px) {
+  .programs-section1{
+    flex-direction: column;
+  }
+  .programs-section1-head{
+    width: 100%;
+  }
+  .programs-search-bar{
+    width: 100%;
+  }
+  .programs-search-dropdown{
+    width: 50%;
+  }
+}

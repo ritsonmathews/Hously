@@ -1,0 +1,86 @@
+.appbar{
+    height: auto;
+    /* padding: 12px; */
+    text-align: center;
+}
+.title-container{
+    display: flex;
+    padding-left: 2%;
+}
+.title{
+    margin: 0;
+    color: #002e00;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+    letter-spacing: 8px;
+    cursor: default;
+    position: relative;
+}
+.hously-img{
+    width: 10%;
+}
+.menu-button-container{
+    float: left;
+    display: none;
+}
+.menu-button{
+    border: 0;
+    padding-top: 3px;
+    background-color: white;
+    color: #16d5d9;
+    font-size: 25px;
+}
+.menu-button:hover{
+    cursor: pointer;
+}
+.avatar-container{
+    position: absolute;
+    top: 15px;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-right: 10px;
+}
+@media(max-width:850px){
+   .avatar-container{
+       display: none;
+   }
+}
+@media(max-width:899px){
+    .menu-button-container{
+        display: block;
+    }
+}
+@media(max-width:690px){
+    .appbar{
+        padding: 7px;
+    }
+    .title{
+        font-size: 20px;
+        letter-spacing: 4px;
+    }
+    .menu-button{
+        font-size: 15px;
+    }
+}
+@media(max-width:300px){
+    .appbar{
+        padding: 7px 0px;
+    }
+    .title{
+        font-size: 20px;
+        letter-spacing: 2px;
+        padding: 0 2px;
+    }
+}
+
+/* sidebar */
+.sidebar{
+    height: 100%;
+    width: 300px;
+    background-color: aqua;
+    display: grid;
+}

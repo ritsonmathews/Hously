@@ -1,0 +1,118 @@
+.job-seeker-main-body {
+    background-color: #f1f2f7;
+    padding: 15px 0 20px;
+    /* height: 100vh; */
+  }
+  .job-seeker-root {
+    background-color: #fffefe;
+    border-radius: 10px;
+    padding: 20px 40px 40px;
+  }
+  .job-seeker-section1 {
+    display: flex;
+    width: 100%;
+  }
+  .job-seeker-section1-head {
+    width: 50%;
+    text-align: center;
+  }
+  .job-seeker-main-title {
+    color: #003300;
+    font-size: 28px;
+  font-family: "Montserrat", sans-serif;
+
+  }
+  .job-seeker-search-bar {
+    margin-top: 17px;
+    width: 40%;
+  }
+  .job-seeker-section2 {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-align: center;
+    width: 100%;
+  }
+  .section2-seeker-info {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid transparent;
+    box-shadow: 0 3px 15px rgb(0 0 0 / 20%);
+    width: 100%;
+    min-height: fit-content;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  .section2-active-seeker-info-count {
+    font-size: 22px;
+    color: #009900;
+  }
+  .section2-active-seeker-info-title {
+    font-size: 16px;
+    color: #009900;
+  }
+  .section2-blocked-seeker-info-count {
+    font-size: 28px;
+    color: #e60000;
+  }
+  .section2-blocked-seeker-info-title {
+    font-size: 18px;
+    color: #e60000;
+  }
+  .job-seeker-section3 {
+    width: 100%;
+  }
+  .job-seeker-section3-routes {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .job-seeker-section3-routes-link {
+    padding: 20px;
+    cursor: pointer;
+    color: #003300;
+    font-size: 18px;
+  }
+  .job-seeker-section3-body {
+    margin-top: 20px;
+  }
+  .seekers-main {
+    margin-top: 50px;
+  }
+  .job-seeker-search-dropdown {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0 3px 15px rgb(0 0 0 / 20%);
+    position: absolute;
+    width: 25%;
+    z-index: 10;
+  }
+  .job-seeker-search-list {
+      /* padding: 15px; */
+      color:#616C6F;
+  }
+  .job-seeker-search-list-content{
+      padding: 10px 15px;
+      border-bottom: 2px solid #d6d7dd;
+      box-shadow: 0 2px 3px #f1f2f7;
+  }
+  .job-seeker-search-list-empty{
+      padding: 15px;
+      color:#616C6F;
+      font-size: 18px;
+      font-weight: 500;
+      text-align: center ;
+  }
+  @media screen and (max-width:990px) {
+    .job-seeker-section1{
+      flex-direction: column;
+    }
+    .job-seeker-section1-head{
+      width: 100%;
+    }
+    .job-seeker-search-bar{
+      width: 100%;
+    }
+    .job-seeker-search-dropdown{
+      width: 50%;
+    }
+  }
