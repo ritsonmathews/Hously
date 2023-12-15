@@ -7,7 +7,7 @@ import "./ContactPage.css";
 
 const ContactPage = () => {
   return (
-    <div className="container-xxl bg-white p-0">
+    <div className="container-xxl bg-white p-0" style={{marginTop:"80px"}}>
           {/* <!-- Header End --> */}
         <div className="container-xxl py-5 bg-dark page-header-contact mb-5">
             <div className="container my-5 pt-5 pb-4">
@@ -27,7 +27,7 @@ const ContactPage = () => {
         {/* <!-- Contact Start --> */}
         <div className="container-xxl py-5">
             <div className="container">
-                <h1 className="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Contact For Any Query</h1>
+                <h1 className="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Any concerns? Contact us.</h1>
                 <div className="row g-4">
                     <div className="col-12">
                         <div className="row gy-4">
@@ -44,7 +44,7 @@ const ContactPage = () => {
                                     <div className="bg-white border rounded d-flex flex-shrink-0 align-items-center justify-content-center me-3">
                                         <i className="fa fa-envelope-open text-primary"></i>
                                     </div>
-                                    <span>hously@gmail.com</span>
+                                    <span>contact@hously.ca</span>
                                 </div>
                             </div>
                             <div className="col-md-4 wow fadeIn" data-wow-delay="0.5s">
@@ -104,13 +104,13 @@ const ContactPage = () => {
                                         />
                                     </Grid>
                                 </Grid>
-                                    <Stack direction="row" spacing={2} alignContent={"center"}>
-                                    <Button variant="outlined" startIcon={<DeleteIcon />}>
-                                    Delete
-                                    </Button>
-                                    <Button variant="contained" endIcon={<SendIcon />}>
-                                    Send
-                                    </Button>
+                                    <Stack direction="row" spacing={2} alignContent={"center"} style={{justifyContent: "center"}}>
+                                        <Button variant="outlined" startIcon={<DeleteIcon />}>
+                                        Delete
+                                        </Button>
+                                        <Button variant="contained" endIcon={<SendIcon />}>
+                                        Send
+                                        </Button>
                                     </Stack>
                                 </div>
                             </form>

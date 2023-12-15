@@ -29,7 +29,7 @@ export const HomePage = () => {
           </div>
           
             <div class="col-md-12">
-            <a class="btn btn-primary py-2 px-4 mt-2" href="/login">
+            <a class="btn btn-primary py-2 px-4 mt-2" href="/user/jobs">
               Get Started
             </a>
             </div>
@@ -45,24 +45,24 @@ export const HomePage = () => {
           <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
             <div class="row g-0 about-bg rounded overflow-hidden">
               <div class="col-6 text-start">
-                <img class="img-fluid w-100" src="https://images.pexels.com/photos/5163419/pexels-photo-5163419.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Man Gardening"/>
+                <img class="img-fluid w-100" src="https://images.pexels.com/photos/5163419/pexels-photo-5163419.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
               </div>
               <div class="col-6 text-start">
                 <img
                   class="img-fluid"
                   src="https://images.pexels.com/photos/634007/pexels-photo-634007.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  style={{ width: 205, marginTop: 15 }} alt="Man Cleaning Windows"
+                  style={{ width: 205, marginTop: 15 }}
                 />
               </div>
               <div class="col-6 text-end">
                 <img
                   class="img-fluid"
                   src="https://images.pexels.com/photos/7210754/pexels-photo-7210754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  style={{ width: 205 }} alt="Person Walking Dogs"
+                  style={{ width: 205 }}
                 />
               </div>
               <div class="col-6 text-end">
-                <img class="img-fluid w-100" src="https://images.pexels.com/photos/3769999/pexels-photo-3769999.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Woman Preping in Kitchen"/>
+                <img class="img-fluid w-100" src="https://images.pexels.com/photos/3769999/pexels-photo-3769999.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
               </div>
             </div>
           </div>
@@ -82,7 +82,7 @@ export const HomePage = () => {
             <p>
               <i class="fa fa-check text-primary me-3"></i>Efficient Talent Discovery
             </p> */}
-            <a class="btn btn-primary py-3 px-5 mt-3" href="#explore">
+            <a class="btn btn-primary py-3 px-5 mt-3" href="/login">
               Read More
             </a>
           </div>
@@ -94,7 +94,7 @@ export const HomePage = () => {
     {/* <!-- Category Start --> */}
 <div class="container-xxl py-5">
 <div class="container">
-  <h1 id="explore" class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+  <h1 class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
     Explore By Category
   </h1>
   <div class="row g-4">

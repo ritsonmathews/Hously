@@ -81,7 +81,7 @@ const AddDomain = () => {
           domain: "",
         });
         getDomains();
-        alert("Service Added");
+        alert("Domain Added");
       });
     }
     setIsLoading(false);
@@ -91,7 +91,7 @@ const AddDomain = () => {
     const error = {};
     let isValid = true;
     if (domain === "") {
-      error.domainRequired = "Please Enter a Service.";
+      error.domainRequired = "Please Enter a Domain.";
       isValid = false;
     }
     setError(error);
@@ -115,7 +115,7 @@ const AddDomain = () => {
   };
   const deleteDomain = (domainId) => {
     let del = window.confirm(
-      "Do you really want to delete this Service? This process cannot be undone."
+      "Do you really want to delete the domain? This process cannot be undone."
     );
     if (del === true) {
       deleteDomainAPI(adminId, domainId, token).then((res) => {
@@ -133,7 +133,7 @@ const AddDomain = () => {
     <div className="add-domain-main-parent">
       <div className="add-domain-main">
         <div className="domain-title-container">
-          <h1 className="add-domain-title">Add Service</h1>
+          <h1 className="add-domain-title">Add Services</h1>
         </div>
         <div className="adding-container">
           <Container maxWidth="md" style={{marginTop:"100px"}}>
@@ -201,7 +201,7 @@ const AddDomain = () => {
           {domainList.length > 0 ? (
             <div className="domain-list-container">
               <div className="domain-list-head">
-                <h1 className="domain-list-title">Available Services</h1>
+                <h1 className="domain-list-title">Available Service's</h1>
               </div>
               <div>
                 {domainList

@@ -10,9 +10,7 @@ import PersonIcon from "@mui/icons-material/Person";
 import GridViewIcon from "@mui/icons-material/GridView";
 import LogoutIcon from "@mui/icons-material/Logout";
 import WorkIcon from "@mui/icons-material/Work";
-import InfoIcon from '@mui/icons-material/Info';
 import SendIcon from "@mui/icons-material/Send";
-import PhoneIcon from '@mui/icons-material/Phone';
 import ArticleIcon from "@mui/icons-material/Article";
 import BusinessIcon from "@mui/icons-material/Business";
 import DomainAddIcon from "@mui/icons-material/DomainAdd";
@@ -22,6 +20,8 @@ import { isAuthenticated, signoutApi } from "../../auth";
 import { withRouter } from "react-router-dom/cjs/react-router-dom.min";
 import { useLocation } from "react-router-dom";
 import { Redirect } from "react-router-dom";
+import { AbcOutlined, ContactPage } from "@mui/icons-material";
+import { BiUser, BiUserCircle } from "react-icons/bi";
 
 const useStyles = makeStyles({
   listItem: {
@@ -131,6 +131,30 @@ const SideDrawer = ({ history }) => {
                 </ListItemText>
               </ListItem>
             </Link>
+            <Link to="/list/users" className={classes.link}>
+              <ListItem
+                button
+                className={
+                  location.pathname === "/list/users"
+                    ? classes.active
+                    : classes.listItem
+                }
+                disableTouchRipple
+              >
+                <ListItemIcon>
+                  <BiUser
+                    className={
+                      location.pathname === "/list/users"
+                        ? classes.active
+                        : classes.listItem
+                    }
+                  />
+                </ListItemIcon>
+                <ListItemText>
+                  <span className="nav-link">Users</span>
+                </ListItemText>
+              </ListItem>
+            </Link>
           </>
         )}
 
@@ -178,6 +202,50 @@ const SideDrawer = ({ history }) => {
             </ListItemIcon>
             <ListItemText>
               <span className="nav-link">Home</span>
+            </ListItemText>
+          </ListItem>
+        </Link>
+        <Link to="/about" className={classes.link}>
+          <ListItem
+            button
+            className={
+              location.pathname === "/about" ? classes.active : classes.listItem
+            }
+            disableTouchRipple
+          >
+            <ListItemIcon>
+              <AbcOutlined
+                className={
+                  location.pathname === "/about"
+                    ? classes.active
+                    : classes.listItem
+                }
+              />
+            </ListItemIcon>
+            <ListItemText>
+              <span className="nav-link">About Us</span>
+            </ListItemText>
+          </ListItem>
+        </Link>
+        <Link to="/contact" className={classes.link}>
+          <ListItem
+            button
+            className={
+              location.pathname === "/contact" ? classes.active : classes.listItem
+            }
+            disableTouchRipple
+          >
+            <ListItemIcon>
+              <ContactPage
+                className={
+                  location.pathname === "/contact"
+                    ? classes.active
+                    : classes.listItem
+                }
+              />
+            </ListItemIcon>
+            <ListItemText>
+              <span className="nav-link">Contact Us</span>
             </ListItemText>
           </ListItem>
         </Link>
@@ -308,50 +376,6 @@ const SideDrawer = ({ history }) => {
           </ListItem>
         )}
       </List>
-      <Link to="/contact" className={classes.link}>
-          <ListItem
-            button
-            className={
-              location.pathname === "/contact" ? classes.active : classes.listItem
-            }
-            disableTouchRipple
-          >
-            <ListItemIcon>
-              <PhoneIcon
-                className={
-                  location.pathname === "/contact"
-                    ? classes.active
-                    : classes.listItem
-                }
-              />
-            </ListItemIcon>
-            <ListItemText>
-              <span className="nav-link">Contact</span>
-            </ListItemText>
-          </ListItem>
-        </Link>
-        <Link to="/about" className={classes.link}>
-          <ListItem
-            button
-            className={
-              location.pathname === "/about" ? classes.active : classes.listItem
-            }
-            disableTouchRipple
-          >
-            <ListItemIcon>
-              <InfoIcon
-                className={
-                  location.pathname === "/about"
-                    ? classes.active
-                    : classes.listItem
-                }
-              />
-            </ListItemIcon>
-            <ListItemText>
-              <span className="nav-link">About</span>
-            </ListItemText>
-          </ListItem>
-        </Link>
     </div>
   );
 };

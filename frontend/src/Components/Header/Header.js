@@ -55,7 +55,7 @@ const Header = (props) => {
             </div>
           </div>
           <div className="title-container">
-          <img class="hously-img" src="../img/hously.png" alt="Hously Logo" />
+          <img class="hously-img" src="../img/hously.png" />
           </div>
           {name && (
             <div className="avatar-container">

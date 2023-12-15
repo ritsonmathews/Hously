@@ -11,32 +11,22 @@ import AddDomain from "../Pages/AddDomain/AddDomain";
 import Dashboard from "../Pages/Dashboard/Dashboard";
 import AddAdmin from "../Pages/General/Pages/AddAdmin/AddAdmin";
 import General from "../Pages/General/General";
-import JobSeeker from "../Pages/JobSeeker/JobSeeker";
 import Login from "../Pages/Login/Login";
 import PostJob from "../Pages/PostJob/PostJob";
 import Checkout from "../Pages/Checkout/Checkout";
 import Jobs from "../Pages/Jobs/Jobs";
 import Applications from "../Pages/Applications/Applications";
 import Register from "../Pages/Register/Register";
-import JobProvider from "../Pages/JobProvider/JobProvider";
-import JobProviderProfile from "../Pages/JobProvider/JobProviderProfile/JobProviderProfile";
-import JobProviderManage from "../Pages/JobProvider/JobProviderManage/JobProviderManage";
 import JobData from "../Pages/JobData/JobData";
 import EditProfile from "../Pages/General/Pages/EditProfile/EditProfile";
-import ContactPage from "../Pages/Contact/ContactUs"
-import AboutPage from "../Pages/About/AboutPage"
 import { ThemeProvider, createTheme } from "@mui/material";
-import JobSeekerProfile from "../Pages/JobSeeker/JobSeekerProfile/JobSeekerProfile";
-import JobProviderApplications from "../Pages/JobProvider/JobProviderApplications/JobProviderApplications";
-import ManageApplications from "../Pages/Common/ManageApplications/ManageApplications";
+
 import ViewApplications from "../Pages/ViewApplications/ViewApplications";
-import UserApplications from "../Pages/JobSeeker/UserApplications/UserApplications";
-import SubmitApplication from "../Pages/JobSeeker/SubmitApplication/SubmitApplication";
+
 import ViewPrograms from "../Pages/ViewProgams/ViewPrograms";
 import SearchPrograms from "../Pages/Common/SearchPrograms/SearchPrograms";
 import ChangePassword from "../Pages/General/Pages/ChangePassword/ChangePassword";
 
-// import ChatWindow from "../Pages/Chat/ChatWindow";
 
 import ListAdmins from "../Pages/General/Pages/ListAdmins/ListAdmins";
 import ManageAdmins from "../Pages/Common/ManageAdmins/ManageAdmins";
@@ -45,7 +35,10 @@ import PrivateRoute from "../auth/PrivateRoute";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import SuperRoute from "../auth/SuperRoute";
 import { PayPalScriptProvider } from "@paypal/react-paypal-js";
-// import Support from "../Pages/Chat/Support";
+import ContactPage from "../Pages/Contact/ContactPage";
+import AboutPage from "../Pages/About/AboutPage";
+import Users from "../Pages/Users/Users";
+
 
 const theme = createTheme({
   palette: {
@@ -76,50 +69,19 @@ const Routes = () => {
             <Route path="/login" exact component={Login} />
             <Route path="/register" exact component={Register} />
             <Route path="/home" exact component={HomePage} />
-            <Route path="/landingpage" exact component={LandingPage} />
             <Route path="/contact" exact component={ContactPage} />
             <Route path="/about" exact component={AboutPage} />
+            <Route path="/landingpage" exact component={LandingPage} />
             <SuperRoute path="/" exact component={Dashboard} />
             <PrivateRoute path="/general" exact component={General} />
-            <PrivateRoute path="/addservice" exact component={AddDomain} />
-            <PrivateRoute path="/jobprovider" exact component={JobProvider} />
-            <PrivateRoute
-              path="/jobprovider/profile/:userId"
-              exact
-              component={JobProviderProfile}
-            />
+            <PrivateRoute path="/list/users" exact component={Users} />
+            <PrivateRoute path="/addservice" exact component={AddDomain} />    
             <PrivateRoute path="/user/postjob" exact component={PostJob} />
             <PrivateRoute path="/user/jobs" exact component={Jobs} />
             <PrivateRoute
               path="/user/apply/job/:programId"
               exact
               component={Applications}
-            />
-            <PrivateRoute
-              path="/jobprovider/profile/manage/:userId/:programId"
-              exact
-              component={JobProviderManage}
-            />
-            <PrivateRoute
-              path="/jobprovider/profile/applications/:userId/:programId"
-              exact
-              component={JobProviderApplications}
-            />
-            <PrivateRoute path="/jobseeker" exact component={JobSeeker} />
-            <PrivateRoute
-              path="/jobseeker/profile/:userId"
-              exact
-              component={JobSeekerProfile}
-            />
-            <PrivateRoute
-              path="/user/applications/:userId"
-              exact
-              component={UserApplications}
-            />
-            <PrivateRoute
-              path="/user/:userId/:programId"
-              exact
-              component={SubmitApplication}
             />
             <PrivateRoute
               path="/job/data/:userId/:programType/:feesType"
@@ -141,11 +103,6 @@ const Routes = () => {
               path="/view/programs"
               exact
               component={ViewPrograms}
-            />
-            <PrivateRoute
-              path="/applications/manage/:userId/:programId/:applicationId"
-              exact
-              component={ManageApplications}
             />
             <PrivateRoute
               path="/search/programs/:userId"
