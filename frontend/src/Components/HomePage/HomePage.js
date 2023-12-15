@@ -45,24 +45,24 @@ export const HomePage = () => {
           <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
             <div class="row g-0 about-bg rounded overflow-hidden">
               <div class="col-6 text-start">
-                <img class="img-fluid w-100" src="https://images.pexels.com/photos/5163419/pexels-photo-5163419.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+                <img class="img-fluid w-100" src="https://images.pexels.com/photos/5163419/pexels-photo-5163419.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Man Gardening" />
               </div>
               <div class="col-6 text-start">
                 <img
                   class="img-fluid"
-                  src="https://images.pexels.com/photos/634007/pexels-photo-634007.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  src="https://images.pexels.com/photos/634007/pexels-photo-634007.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Man cleaning windows"
                   style={{ width: 205, marginTop: 15 }}
                 />
               </div>
               <div class="col-6 text-end">
                 <img
                   class="img-fluid"
-                  src="https://images.pexels.com/photos/7210754/pexels-photo-7210754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  src="https://images.pexels.com/photos/7210754/pexels-photo-7210754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Person walking dogs"
                   style={{ width: 205 }}
                 />
               </div>
               <div class="col-6 text-end">
-                <img class="img-fluid w-100" src="https://images.pexels.com/photos/3769999/pexels-photo-3769999.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+                <img class="img-fluid w-100" src="https://images.pexels.com/photos/3769999/pexels-photo-3769999.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Woman Preping in Kitchen" />
               </div>
             </div>
           </div>

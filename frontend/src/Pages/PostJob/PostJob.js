@@ -119,7 +119,7 @@ const JobProviderProfile = (props) => {
             loading: false,
           });
           handleClick();
-          history.push('/user/jobs');
+          history.push('/checkout');
         }
       }
     });

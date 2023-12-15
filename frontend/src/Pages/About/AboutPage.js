@@ -26,7 +26,7 @@ const AboutPage = () => {
                     <div className="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                         <div className="row g-0 about-bg rounded overflow-hidden">
                             <div className="col-12 text-start">
-                                <img className="img-fluid w-100" src="/img/about-1.jpeg" />
+                                <img className="img-fluid w-100" src="/img/about-1.jpeg" alt="The Team meeting image" />
                             </div>
                         </div>
                     </div>

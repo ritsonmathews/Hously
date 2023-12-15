@@ -8,21 +8,21 @@ import { Padding } from "@mui/icons-material";
 
 const Checkout = () => {
   const product = {
-    description: "Design+Code React Hooks Course",
-    price: 19,
+    description: "Job Posting",
+    price: 110,
   };
   return (
     <Container>
       <div className="checkout" style={{paddingTop:"100px"}}>
         <h1>PayPal Checkout</h1>
-        <p className="checkout-title">Design+Code React Hooks Course</p>
+        <p className="checkout-title">Job Posting</p>
         <p className="checkout-description">
-          Learn how to build a website with React Hooks
+          Your Payment will be on hold with us until the job gets completed.
         </p>
         <h1 className="checkout-price">$19</h1>
         <img
           className="checkout-product-image"
-          src={ProductImage}
+          src={"https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}
           alt="Product"
         />
         <button className="checkout-button">

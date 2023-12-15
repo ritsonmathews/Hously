@@ -181,7 +181,7 @@ const SubmitApplication = (props) => {
                   className="submit-application-program-head"
                   style={{ margin: "0 0 24px 0" }}
                 >
-                  Program Details
+                  Job Details
                 </h2>
               </div>
               <form>
